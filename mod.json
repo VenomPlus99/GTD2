@@ -10,6 +10,11 @@
     "name": "GTD2+",
     "version": "v1.0.0",
     "developer": "V99",
+    "tags": ["enhancement", "gameplay", "offline", "utility"],
+    "links": {
+        "source": "https://github.com/VenomPlus99/GTD2",
+        "community": "https://discord.gg/MPpar9TrZ9"
+    },
     "description": "Support for 'Geometry Tower Defense 2' level.",
     "settings": {
         "enable-mod": {
