@@ -1,0 +1,28 @@
+{
+    "geode": "5.4.1",
+    "gd": {
+        "win": "2.2081",
+        "android": "2.2081",
+        "mac": "2.2081",
+        "ios": "2.2081"
+    },
+    "id": "v99.gtd2",
+    "name": "GTD2+",
+    "version": "v1.0.0",
+    "developer": "V99",
+    "description": "Support for 'Geometry Tower Defense 2' level.",
+    "settings": {
+        "enable-mod": {
+            "type": "bool",
+            "name": "Enable GTD2+ mod",
+            "description": "Global on/off switch for this mod",
+            "default": true
+        }
+    },
+    "dependencies": {
+        "iandyhd3.infinite_inputs": {
+            "required": true,
+            "version": ">=v2.0.1"
+        }
+    }
+}
