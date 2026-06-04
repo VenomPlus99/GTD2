@@ -60,7 +60,7 @@ static constexpr int DELETE_SAVE_FLAG_ITEM_ID = 8887;
 static constexpr int SAVE_FLAG_ITEM_ID = 8888;
 
 static std::vector<int> ITEM_IDS_TO_SAVE = {2, 999, 7002, 8035, 8036, 8037, 8889, 9001,
-                                            9002, 9030, 9055, 9056, 9063, 9064, 9065,
+                                            9002, 9030, 9055, 9056, 9063, 9064, 9065, 9066, 9067, 9068,
                                             9500, 9501, 9502, 9503, 9504, 9505,
                                             9506, 9507, 9508, 9509, 9510, 9511, 9512,
                                             9513, 9514, 9515, 9516, 9517, 9518, 9519,
@@ -183,6 +183,28 @@ void deleteSaveFileExceptSettings()
     log::info("Deleted all item IDs");
     for (auto const &item : newData.items)
         log::info("  ItemID: {} | Value: {}", item.itemID, item.value);
+}
+
+void hideCursor()
+{
+    if (auto gm = GameManager::sharedState())
+    {
+        // If the "Show Cursor In-Game" option is enabled, do nothing.
+        if (gm->getGameVariable(GameVar::ShowCursor))
+            return;
+        PlatformToolbox::hideCursor();
+    }
+}
+
+void showCursor()
+{
+    if (auto gm = GameManager::sharedState())
+    {
+        // If the "Show Cursor In-Game" option is enabled, do nothing.
+        if (gm->getGameVariable(GameVar::ShowCursor))
+            return;
+        PlatformToolbox::showCursor();
+    }
 }
 
 class $modify(GJEffectManager)
@@ -348,7 +370,7 @@ class $modify(PlayLayer)
         {
             auto gjbgl = reinterpret_cast<GJBaseGameLayerHook *>(this);
             gjbgl->setItem(9999, 1);
-            PlatformToolbox::hideCursor();
+            hideCursor();
         }
     }
 
@@ -358,7 +380,7 @@ class $modify(PlayLayer)
 
         if (modEnabled())
         {
-            PlatformToolbox::hideCursor();
+            hideCursor();
         }
     }
 };
@@ -430,7 +452,7 @@ class $modify(PauseLayer)
 
         if (modEnabled())
         {
-            PlatformToolbox::showCursor();
+            showCursor();
         }
     }
 };
@@ -443,7 +465,7 @@ class $modify(EndLevelLayer)
 
         if (modEnabled())
         {
-            PlatformToolbox::showCursor();
+            showCursor();
         }
     }
 };
