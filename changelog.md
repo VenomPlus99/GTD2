@@ -1,4 +1,4 @@
-# v1.0.0
+# v1.0.1
 
 - Cursor will not force hide/show anymore if you have "Show Cursor In-Game" setting active.
 
