@@ -128,9 +128,9 @@ void saveItemStates(GJBaseGameLayer *layer)
 
     Mod::get()->setSavedValue("gtd2-save", data);
 
-    log::info("[DEBUG] Saved items:");
+    log::debug("[DEBUG] Saved items:");
     for (auto const &item : data.items)
-        log::info("  ItemID: {} | Value: {}", item.itemID, item.value);
+        log::debug("  ItemID: {} | Value: {}", item.itemID, item.value);
 }
 
 void restoreItemStates(GJBaseGameLayer *layer)
@@ -180,9 +180,9 @@ void deleteSaveFileExceptSettings()
 
     Mod::get()->setSavedValue("gtd2-save", newData);
 
-    log::info("Deleted all item IDs");
+    log::debug("Deleted all item IDs");
     for (auto const &item : newData.items)
-        log::info("  ItemID: {} | Value: {}", item.itemID, item.value);
+        log::debug("  ItemID: {} | Value: {}", item.itemID, item.value);
 }
 
 void hideCursor()

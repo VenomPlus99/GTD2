@@ -14,7 +14,7 @@ Detailed features:
 
 - Level Restriction: This mod only activates for the level named "GTD 2" by creators Pe43NkA and V99. It won't affect other levels.
 
-- Infinite Inputs Support: For full control, this mod uses the Infinite Inputs mod by iAndyHD3 as a required dependency. With Infinite Inputs you can use the mouse cursor in-game and access extra keybinds (for example: 1–5, F, X, etc...).
+- Infinite Inputs Support: For full control, this mod uses the Infinite Inputs mod by iAndyHD3 as a required dependency. With Infinite Inputs you can use the mouse cursor in-game and access extra keybinds (for example: 1, 2, 3, 4, 5, F, X, etc...).
 
 # Contact us
 
