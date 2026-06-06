@@ -1,6 +1,6 @@
 # About GTD2+
 
-Hey Commander, welcome aboard! This mod quietly saves and restores your progress, cosmetics, and achievements for the level "GTD 2" (by Pe43NkA and V99), gives you a free cursor and trail, and supports advanced input via the Infinite Inputs mod so you can use YOUR OWN MOUSE CURSOR IN LEVEL, along with extra keybinds (Windows and MacOS exclusive), believe it or not!
+Hey Commander, welcome aboard! This mod quietly saves and restores your progress, cosmetics, and achievements for the level "GTD 2" (aka Geometry Tower Defense 2) by Pe43NkA and V99 [ID: 142065893], gives you a free cursor and trail, and supports advanced input via the Infinite Inputs mod so you can use YOUR OWN MOUSE CURSOR IN LEVEL, along with extra keybinds (Windows and MacOS exclusive), believe it or not!
 
 Detailed features:
 

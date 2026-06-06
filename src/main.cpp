@@ -98,7 +98,7 @@ inline bool modEnabled()
     if (!level)
         return false;
 
-    return (level->m_levelName == "GTD 2" && level->m_creatorName == "Pe43NkA") || level->m_levelID == 141857012;
+    return level->m_levelID == 142065893 || level->m_levelID == 141857012; // first ID is actual level, second one is for testing
 }
 
 int getItemValue(GJEffectManager *mgr, int itemID)
