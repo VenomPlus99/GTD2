@@ -1,3 +1,7 @@
+# v1.0.4
+
+- Fixed mobile support.
+
 # v1.0.3
 
 - Level release.

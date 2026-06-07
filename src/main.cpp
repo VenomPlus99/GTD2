@@ -471,3 +471,23 @@ class $modify(EndLevelLayer)
 };
 
 #endif
+
+#if defined(GEODE_IS_IOS) || defined(GEODE_IS_ANDROID)
+class $modify(PlayLayerMobile, PlayLayer)
+{
+    void setupHasCompleted()
+    {
+        PlayLayer::setupHasCompleted();
+
+        if (modEnabled())
+        {
+            // Set mobile-only items
+            m_effectManager->updateCountForItem(9999, 1);
+            updateCounters(9999, 1);
+
+            m_effectManager->updateCountForItem(9900, 1);
+            updateCounters(9900, 1);
+        }
+    }
+};
+#endif
